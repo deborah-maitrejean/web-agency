@@ -978,12 +978,27 @@ footer ul {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
 }
+
 footer p {
-    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     font-size: 14px;
 }
+
 footer a {
     color: #3491b2;
+}
+
+footer p span {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*-------------MEDIA QUERIES-----------*/
@@ -1255,14 +1270,10 @@ footer a {
         margin-top: 0;
     }
 
-    .fa-items {
-        left: 65%;
-    }
+    .fa-items {left: 65%;}
 
     /*---------------SECTION NOS PROJETS---------------*/
-    #projets-menu {
-        margin: 110px auto 110px auto;
-    }
+    #projets-menu {margin: 110px auto 110px auto;}
 
     #projets-menu ul {
         -webkit-flex-direction: column;
@@ -1275,17 +1286,11 @@ footer a {
         width: 100%;
     }
 
-    #projets-menu li {
-        line-height: 65px;
-    }
+    #projets-menu li {line-height: 65px;}
 
-    #projets-menu li a {
-        font-size: 28px;
-    }
+    #projets-menu li a {font-size: 28px;}
 
-    #projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after {
-        display: none;
-    }
+    #projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after {display: none;}
 
     #projets-menu li:first-child, .active {
         border-radius: 5px 5px 0 0;
@@ -1301,7 +1306,7 @@ footer a {
 
     /*---------------SECTION CONTACT---------------*/
     #nous-contacter form {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 }
 
