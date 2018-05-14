@@ -559,7 +559,7 @@ h1 {
     -moz-border-radius: 50% / 50%;
 }
 
-.circle, hr, .fa-line-chart, .fa-cubes, .fa-pie-chart, li .fa-circle, .fa-services {
+.circle, hr, .fa-line-chart, .fa-cubes, .fa-pie-chart, li .circles, .fa-services {
     position: absolute;
 }
 
@@ -588,7 +588,7 @@ hr {
     margin-left: -80px;
 }
 
-li .fa-circle {
+li .circles {
     margin-top: 40px;
     margin-left: -30px;
     z-index: 2;
@@ -599,7 +599,7 @@ li .fa-circle {
     -moz-box-shadow: 0 0 0 5px white;
 }
 
-li .fa-circle, .fa-services {
+li .circles, .fa-services {
     border-radius: 50% / 50%;
     -webkit-border-radius: 50% / 50%;
     -moz-border-radius: 50% / 50%;
@@ -954,8 +954,16 @@ input[type="text"], input[type="email"], textarea {
 
 /*-------------FOOTER-----------*/
 footer {
-    background-color: #E5E5E5;
     min-height: 150px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
 }
 
 footer ul {
@@ -966,6 +974,16 @@ footer ul {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+}
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
+footer a {
+    color: #3491b2;
 }
 
 /*-------------MEDIA QUERIES-----------*/
