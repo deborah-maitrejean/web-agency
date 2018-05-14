@@ -5,6 +5,6 @@ $(document).ready(function () {
         var target = $(this).attr('href');
         $('html, body')
             .stop()
-            .animate({ scrollTop: $(target).offset().top - 150 }, 1000);
+            .animate({scrollTop: $(target).offset().top - 150}, 1000);
     });
 });
