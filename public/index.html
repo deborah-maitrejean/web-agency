@@ -57,7 +57,7 @@
     <header id="top">
         <div id="navigation">
             <div>
-                <img src="images/logo.png" alt="Logo de la Webagency">
+                <a href="#"><img src="images/logo.png" alt="Logo de la Webagency"></a>
             </div>
             <!--Menu principal -->
             <nav>
@@ -112,7 +112,7 @@
             <h2>NOS SERVICES</h2>
             <div class="h2-separation">
                 <hr>
-                <div class="circle"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                <div class="circle"><i class="fa fa-circle circles" aria-hidden="true"></i></div>
             </div>
             <p>Nous concevons des solutions de communication numérique sur mesure : site vitrine, blog, forum ou encore boutique en ligne. Que ce soit pour un site ambitieux ou un site modeste, avec nos clients, nous travaillons avec la même exigence.</p>
         </div>
@@ -124,7 +124,7 @@
                 <li>
                     <div class="fa-items">
                         <div class="fa-services"></div>
-                        <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><i class="fa fa-circle circles" aria-hidden="true"></i>
                     </div>
                     <div class="list-items">
                         <h3>UX Design</h3>
@@ -134,7 +134,7 @@
                 <li>
                     <div class="fa-items">
                         <div class="fa-services"></div>
-                        <i class="fa fa-cubes fa-2x" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-cubes fa-2x" aria-hidden="true"></i><i class="fa fa-circle circles" aria-hidden="true"></i>
                     </div>
                     <div class="list-items">
                         <h3>UI Design</h3>
@@ -144,7 +144,7 @@
                 <li>
                     <div class="fa-items">
                         <div class="fa-services"></div>
-                        <i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><i class="fa fa-circle circles" aria-hidden="true"></i>
                     </div>
                     <div class="list-items">
                         <h3>SEO</h3>
@@ -161,7 +161,7 @@
             <h2>NOS PROJETS</h2>
             <div class="h2-separation">
                 <hr>
-                <div class="circle"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                <div class="circle"><i class="fa fa-circle circles" aria-hidden="true"></i></div>
             </div>
             <p>Nous avons eu l'opportunité de travailler sur des projets aussi variés qu'originaux, et remercions nos clients pour la confiance qu'ils ont placé en nous. Nous vous proposons de les découvrir sans plus tarder.</p>
             <!-- Menu secondaire -->
@@ -265,35 +265,35 @@
             <h2 class="centrer">NOUS CONTACTER</h2>
             <div class="h2-separation">
                 <hr>
-                <div class="circle"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                <div class="circle"><i class="fa fa-circle circles" aria-hidden="true"></i></div>
             </div>
         </div>
 
         <!-- Formulaire-->
-        <form action="#" method="post" enctype=""><!-- post: n'est pas limité à 256 caractères, ne passe pas par l'URL comme avec get -->
+        <form action="#" method="post" enctype="">
             <fieldset>
                 <legend><b>Contact Info</b></legend>
                 <p><strong>WebAgency SAS</strong><br>
                     25 rue d'Hauteville 75010 Paris<br>
                     <span id="tel">Tel :</span> 01 02 03 04 05</p>
                 <div class="form-group centrer">
-                    <label for="nom"></label>
-                    <input type="text" id="nom" name="nom" class="form-input" value="Name" required maxlength="255">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" class="form-input" value="Name" required maxlength="255" title="Nom">
                 </div>
                 <div class="form-group centrer">
-                    <label for="adresseMail"></label>
-                    <input type="email" id="adresseMail" name="adresseMail" class="form-input" value="Email" required maxlength="254">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" class="form-input" value="Email" required maxlength="254" title="Adresse mail">
                 </div>
                 <div class="form-group centrer">
-                    <label for="sujet"></label>
-                    <input type="text" id="sujet" name="sujet" class="form-input" value="Subject" required maxlength="255">
+                    <label for="subjet"></label>
+                    <input type="text" id="subjet" name="subjet" class="form-input" value="Subject" required maxlength="255" title="Objet">
                 </div>
                 <div class="form-group centrer">
                     <label for="message"></label>
-                    <textarea id="message" name="message" rows="10" cols="20" maxlength="3000">Message</textarea>
+                    <textarea id="message" name="message" rows="10" cols="20" maxlength="3000" title="Votre message">Message</textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" name="envoyer" id="input-contact" value="Send Message">
+                    <input type="submit" name="envoyer" id="input-contact" value="Send Message" title="Envoyer">
                 </div>
             </fieldset>
         </form>
@@ -306,35 +306,38 @@
 
     <!-- Pied de page -->
     <footer>
-        <li class="">
-            <a href="https://twitter.com/D_Maitrejean" target="_blank">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
-        <li class="">
-            <a href="https://www.linkedin.com/in/d%C3%A9borah-maitrejean" target="_blank">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
-        <li class="">
-            <a href="https://github.com/deborah-maitrejean" target="_blank">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
+        <ul>
+            <li class="">
+                <a href="https://twitter.com/D_Maitrejean" target="_blank" title="Twitter">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.linkedin.com/in/d%C3%A9borah-maitrejean" target="_blank" title="Linkedin">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://github.com/deborah-maitrejean" target="_blank" title="GitHub">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
         </ul>
         <p class="copyright text-muted">
-            2018 Copyright &copy; <a href="index.php">Web Agency</a>
+            <span>2018 Copyright &copy; <a href="#">Web Agency</a></span>
             |
-            Site crée par <a href="https://deborah-maitrejean.com" target="_blank">Déborah Maitrejean</a>
+            <span><a href="https://deborah-maitrejean.com" target="_blank">Mentions légales</a></span>
+            |
+            <span>Site crée par <a href="https://deborah-maitrejean.com" target="_blank">Déborah Maitrejean</a></span>
         </p>
     </footer>
 
