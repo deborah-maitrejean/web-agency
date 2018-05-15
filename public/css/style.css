@@ -978,7 +978,7 @@ footer ul {
     -ms-flex-pack: center;
 }
 
-footer p {
+footer .copyright {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -998,6 +998,48 @@ footer a {
 footer p span {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/*---------- LEGALES MENTIONS MODAL -----------*/
+.modal{
+    display: none; /* Hidden by default */
+}
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(93, 173, 211, 0.1); /* Fallback color */
+    background-color: rgba(93, 173, 211, 0.3); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#close {
+    color: rgb(93, 173, 211);
+    background-color: white;
+    font-size: 16px;
+    -moz-border-radius: 5px / 5px;
+    -webkit-border-radius: 5px / 5px;
+    border-radius: 5px / 5px;
+    position: absolute;
+    left: 80%;
 }
 
 /*-------------MEDIA QUERIES-----------*/
