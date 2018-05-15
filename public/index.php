@@ -1,16 +1,26 @@
+<?php
+function proteger($adr)
+{
+    $adresseCodee = "";
+    for ($i = 0; $i < strlen($adr); $i++)
+        $adresseCodee .= "&#" . ord(substr($adr, $i, 1)) . ";";
+    return $adresseCodee;
+}
+?>
+
 <!DOCTYPE html> <!-- Déclaration du Doctype : standard qui est utilisé -->
 <html lang="fr">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"/> <!-- viewport de la même largeur que l'écran/Possiblité de zoomer X2 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"> <!-- viewport de la même largeur que l'écran/Possiblité de zoomer X2 -->
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8"> <!-- Encodage de ma page avec norme UTF-8, qui comprend toutes les lettres et langues du monde -->
 
     <title>WebAgency : l'agence de tous vos projets !</title><!-- Titre de la page web -->
 
-    <meta name="description" content="Site de la WebAgency, l'agence de tous vos projets."/> <!-- Courte phrase décrivant le site -->
-    <meta name="keywords" content="réalisation de sites Web, UX Design, Ui Design, SEO, référencement naturel"/> <!-- Mots-clefs pour le référencement -->
-    <meta name="copyright" content="WebAgency"/>
+    <meta name="description" content="Site de la WebAgency, l'agence de tous vos projets."> <!-- Courte phrase décrivant le site -->
+    <meta name="keywords" content="réalisation de sites Web, UX Design, Ui Design, SEO, référencement naturel"> <!-- Mots-clefs pour le référencement -->
+    <meta name="copyright" content="WebAgency">
     <meta name="language" content="fr">
-    <meta name="robots" content="index, follow"/> <!-- pour dire aux robots des moteurs de recherche d'indexer la page et suivre les liens de la page -->
+    <meta name="robots" content="index, follow"> <!-- pour dire aux robots des moteurs de recherche d'indexer la page et suivre les liens de la page -->
 
     <!-- CSS pour la mise en forme de la page HTML -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -19,17 +29,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
     <!-- Icons -->
-    <link href="images/favicon.ico" type="image/ico" rel="icon" />
+    <link href="images/favicon.ico" type="image/ico" rel="icon">
     <link rel="icon" type="image/png" href="images/ico/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/ico/favicon-16x16.png" sizes="16x16">
     <link rel="shortcut icon" href="images/ico/favicon.ico">
 
     <!-- Facebook Open Graph data -->
-    <meta property="og:title" content="Accueil de la WebAgency"/>
+    <meta property="og:title" content="Accueil de la WebAgency">
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://web-agency.des-is-it.com/"/>
-    <meta property="og:image" content="http://web-agency.des-is-it.com/images/logo.png"/>
-    <meta property="og:description" content="Agence Web regroupant des développeurs intégrateurs et graphistes, réalisant des sites Internet de qualité."/>
+    <meta property="og:url" content="http://web-agency.des-is-it.com/">
+    <meta property="og:image" content="http://web-agency.des-is-it.com/images/logo.png">
+    <meta property="og:description" content="Agence Web regroupant des développeurs intégrateurs et graphistes, réalisant des sites Internet de qualité.">
     <meta property="og:site_name" content="web-agency"/>
 
     <!-- Twitter Card data -->
@@ -98,7 +108,7 @@
             <div id="main-title">
                 <h1>WEBAGENCY <span>: L'AGENCE DE TOUS <br>VOS PROJETS !</span></h1>
                 <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                <a class="centrer" href="#nos-services">Plus d'infos</a>
+                <a class="centrer scroll" href="#nos-services">Plus d'infos</a>
             </div>
             <!-- Progress bar -->
             <div id="timeline"></div>
@@ -119,7 +129,7 @@
 
         <!-- Liste des services -->
         <div id="list-services">
-            <img src="images/main-feature.png" alt="Ecran d'ordinateur Apple sur lequel on peut voir : un logo jaune, et six images représentant des visuels d'enfants portant des tee-shirts."><!--alt pour alternatif, courte description pour navigateur non visuel ou personne malvoyant avec lecteur d'écran, et référencement-->
+            <img src="images/main-feature.png" alt="Ecran d'ordinateur Apple sur lequel on peut voir : un logo jaune, et six images représentant des visuels d'enfants portant des tee-shirts.">
             <ul>
                 <li>
                     <div class="fa-items">
@@ -332,19 +342,31 @@
                 </a>
             </li>
         </ul>
+
         <p class="copyright">
             <span>2018 Copyright &copy; <a href="#">Web Agency</a></span>
             |
-            <span><a>Mentions légales</a></span>
-            |
             <span>Site crée par <a href="https://deborah-maitrejean.com" target="_blank">Déborah Maitrejean</a></span>
+            |
+            <span>
+                <a id="modal-link">Mentions légales</a>
+                <!-- Modal -->
+                <div id="legales-mentions-modal" class="modal">
+                    <div class="modal-content"> <!-- Modal content -->
+                        <button id="close"><i class="fa fa-times fa-3x" aria-hidden="true"></i></button>
+                        <?php include_once("legalesMentions.php"); ?>
+                    </div>
+                </div>
+            </span>
         </p>
+
     </footer>
 
 </div><!-- Container end -->
 
 <script src="js/navigation.js"></script>
 <script src="js/DropdownMenu.js"></script>
+<script src="js/LegalesMentions.js"></script>
 <noscript>
     <p>Attention :<br>
         Afin de pouvoir utiliser notre site, JavaScript doit être activé.
