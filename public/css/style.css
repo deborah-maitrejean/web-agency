@@ -22,7 +22,7 @@ html, body { /*propriétés pour du full screen*/
 /* Déclaration de la police FontAwesome pour les icônes */
 @font-face {
     font-family: 'FontAwesome';
-    src: url('../fonts/FontAwesome/SourceSansPro-Regular.otf') format('otf'),
+    src: url('../fonts/FontAwesome/fontawesome-webfont.otf') format('otf'),
     url('../fonts/FontAwesome/fontawesome-webfont.eot') format('eot'),
     url('../fonts/FontAwesome/fontawesome-webfont.svg') format('svg'),
     url('../fonts/FontAwesome/fontawesome-webfont.ttf') format('truetype'),
@@ -865,7 +865,6 @@ iframe, #fondBleu {
 
 #fondBleu {
     z-index: 2;
-/ / background-color: rgba(93, 173, 211, 0.2);
     background-color: rgb(93, 173, 211);
 }
 
@@ -1127,13 +1126,12 @@ footer p span {
         position: absolute;
     }
 
-    #navigation > div {
-        top: 22px;
-        left: 10%;
+    #navigation div {
+        margin-left: auto;
     }
 
-    #navigation nav {
-        left: 70%;
+    #navigation #logo {
+        margin-left: 8%;
     }
 
     #navigation i {
@@ -1145,12 +1143,10 @@ footer p span {
     }
 
     /* Dropdown menu */
-    #dropbtn {
+    #dropbtn, #dropbtn-close {
         position: absolute;
         top: 5px;
-    }
-
-    #dropbtn, #dropbtn-close {
+        left: 80%;
         background-color: white;
         font-size: 16px;
         -moz-border-radius: 5px / 5px;
@@ -1161,8 +1157,9 @@ footer p span {
     #dropdown-content {
         display: none;
         position: absolute;
-        top: 5px;
-        left: -25%;
+        top: 0;
+        left: 0;
+        margin-top: 78px;
         background-color: white;
         width: 100%;
         -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -1173,13 +1170,14 @@ footer p span {
 
     #dropdown-content a {
         padding: 12px 16px;
+        display: block;
     }
 
     #dropdown-content a:hover {
         background-color: #f9f9f9;
     }
 
-    nav #dropdown, #dropdown:hover #dropdown-content, #dropdown-content a {
+    nav #dropdown { /*#dropdown:hover #dropdown-content, #dropdown-content a*/
         display: block;
     }
 
@@ -1252,6 +1250,10 @@ footer p span {
 
     #navigation > div img {
         width: 80%;
+    }
+
+    #navigation #logo {
+        margin-left: auto;
     }
 
     /*---------------SECTION NOS SERVICES---------------*/

@@ -56,16 +56,16 @@
     <!--========== En-tête ==========-->
     <header id="top">
         <div id="navigation">
-            <div>
+            <div id="logo">
                 <a href="#"><img src="images/logo.png" alt="Logo de la Webagency"></a>
             </div>
-            <!--Menu principal -->
+            <!--DropdownMenu principal -->
             <nav>
                 <!-- Dropdown menu -->
                 <div id="dropdown">
                     <button id="dropbtn"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></button>
+                    <button id="dropbtn-close"><i class="fa fa-times fa-3x" aria-hidden="true"></i></button>
                     <div id="dropdown-content">
-                        <button id="dropbtn-close"><i class="fa fa-times fa-3x" aria-hidden="true"></i></button>
                         <a href="#top" class="scroll">Accueil</a>
                         <a href="#nos-services" class="scroll">Services</a>
                         <a href="#nos-projets" class="scroll">Portfolio</a>
@@ -164,7 +164,7 @@
                 <div class="circle"><i class="fa fa-circle circles" aria-hidden="true"></i></div>
             </div>
             <p>Nous avons eu l'opportunité de travailler sur des projets aussi variés qu'originaux, et remercions nos clients pour la confiance qu'ils ont placé en nous. Nous vous proposons de les découvrir sans plus tarder.</p>
-            <!-- Menu secondaire -->
+            <!-- DropdownMenu secondaire -->
             <div id="projets-menu">
                 <ul> <!-- (Liens désactivés) -->
                     <li><a class="active">All Works</a></li>
@@ -344,6 +344,7 @@
 </div><!-- Container end -->
 
 <script src="js/navigation.js"></script>
+<script src="js/DropdownMenu.js"></script>
 <noscript>
     <p>Attention :<br>
         Afin de pouvoir utiliser notre site, JavaScript doit être activé.
