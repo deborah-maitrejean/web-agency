@@ -332,10 +332,10 @@
                 </a>
             </li>
         </ul>
-        <p class="copyright text-muted">
+        <p class="copyright">
             <span>2018 Copyright &copy; <a href="#">Web Agency</a></span>
             |
-            <span><a href="https://deborah-maitrejean.com" target="_blank">Mentions légales</a></span>
+            <span><a>Mentions légales</a></span>
             |
             <span>Site crée par <a href="https://deborah-maitrejean.com" target="_blank">Déborah Maitrejean</a></span>
         </p>
