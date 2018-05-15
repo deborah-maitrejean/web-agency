@@ -22,7 +22,7 @@ html, body { /*propriétés pour du full screen*/
 /* Déclaration de la police FontAwesome pour les icônes */
 @font-face {
     font-family: 'FontAwesome';
-    src: url('../fonts/FontAwesome/SourceSansPro-Regular.otf') format('otf'),
+    src: url('../fonts/FontAwesome/fontawesome-webfont.otf') format('otf'),
     url('../fonts/FontAwesome/fontawesome-webfont.eot') format('eot'),
     url('../fonts/FontAwesome/fontawesome-webfont.svg') format('svg'),
     url('../fonts/FontAwesome/fontawesome-webfont.ttf') format('truetype'),
