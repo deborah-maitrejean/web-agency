@@ -1021,6 +1021,10 @@ footer p span {
     background-color: rgba(93, 173, 211, 0.3); /* Black w/ opacity */
 }
 
+#modal-link:hover, #close:hover {
+    cursor: pointer;
+}
+
 /* Modal Content/Box */
 .modal-content {
     background-color: white;
