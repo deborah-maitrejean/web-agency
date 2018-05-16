@@ -9,6 +9,9 @@ var slide2 = document.getElementById('slide-2');
 
 var Slider = {
     init: function () {
+        slide1.style.backgroundImage = 'url("http://localhost/web-agency/public/images/slider/bg1.jpg")';
+        slide2.style.backgroundImage = 'url("http://localhost/web-agency/public/images/slider/bg2.jpg")';
+        //slide2.style.left = '-100%';
         this.start();
         this.controlSlideshow();
     },
@@ -25,10 +28,13 @@ var Slider = {
         animationTimeline.style.webkitAnimation = '';
     },
     previousSlide: function () {
-        //slide1.setAttribute('src', '../images/slider/bg1.jpg');
+        Slider.stop();
+        slide1.style.backgroundImage = 'url("http://localhost/web-agency/public/images/slider/bg1.jpg")';
+        slide2.style.left = '-100%';
     },
     nextSlide: function () {
-        //slide1.setAttribute('src', '../images/slider/bg2.jpg');
+        Slider.stop();
+        slide2.style.left = '0';
     },
     controlSlideshow: function () {
         next.addEventListener('click', function () {
