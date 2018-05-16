@@ -243,11 +243,11 @@ nav #dropdown {
 }
 
 #slide-1 {
-    background-image: url('../images/slider/bg1.jpg');
+    //background-image: url('../images/slider/bg1.jpg');
 }
 
 #slide-2 {
-    background-image: url('../images/slider/bg2.jpg');
+    //background-image: url('../images/slider/bg2.jpg');
     left: 100%;
 }
 
