@@ -97,13 +97,17 @@ function proteger($adr)
                 <div id="slide-1"></div>
                 <div id="slide-2"></div>
             </div>
+
             <!-- Details slider -->
-            <div id="before" title="Précédent">
+            <div id="previous" title="Précédent">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
             </div>
+
+            <!-- controllers -->
             <div id="next" title="Suivant">
                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
+
             <!-- Titre principal -->
             <div id="main-title">
                 <h1>WEBAGENCY <span>: L'AGENCE DE TOUS <br>VOS PROJETS !</span></h1>
@@ -114,6 +118,7 @@ function proteger($adr)
             <div id="timeline"></div>
             <div id="timeline-background"></div>
         </section>
+
     </header>
 
     <!--========== Section "Nos services" ============-->
@@ -367,6 +372,7 @@ function proteger($adr)
 <script src="js/navigation.js"></script>
 <script src="js/DropdownMenu.js"></script>
 <script src="js/LegalesMentions.js"></script>
+<script src="js/slider.js"></script>
 <noscript>
     <p>Attention :<br>
         Afin de pouvoir utiliser notre site, JavaScript doit être activé.
