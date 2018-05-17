@@ -37,7 +37,7 @@ h2 {
     font-size: 30px;
 }
 
-#before:hover, #next:hover, #before:active, #next:active, #main-title button:active, #main-title button:hover, #projets-menu li:hover,
+#previous:hover, #next:hover, #previous:active, #next:active, #main-title button:active, #main-title button:hover, #projets-menu li:hover,
 #projets-menu li:focus, #projets-menu li:active, #projets-menu ul:not(:hover) li .active, .portfolio-items:hover .hidden, #input-contact[type="submit"],
 .dropbtn, .dropbtn-close {
     cursor: pointer;
@@ -235,26 +235,10 @@ nav #dropdown {
 #slide-1, #slide-2 {
     width: 100%;
     position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: no-repeat center center;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-}
-
-#slide-1 {
-    background-image: url('../images/slider/bg1.jpg');
-}
-
-#slide-2 {
-    background-image: url('../images/slider/bg2.jpg');
-    left: 100%;
-}
-
-#slider:not(:hover) #slides {
-    -webkit-animation: imagesSlide 15s linear alternate infinite;
-    animation: imagesSlide 15s linear alternate infinite;
 }
 
 /*---------------PROGRESS BAR---------------*/
@@ -340,9 +324,8 @@ nav #dropdown {
     height: 4px;
 }
 
-#timeline, #slider:not(:hover) #timeline {
+#timeline {
     z-index: 2;
-    width: 10%;
 }
 
 #timeline-background {
@@ -355,13 +338,12 @@ nav #dropdown {
     background-color: rgb(93, 173, 211);
 }
 
-#slider:not(:hover) #timeline {
-    -webkit-animation: timeline 15s linear alternate infinite;
-    animation: timeline 15s linear alternate infinite;
+body:target {
+    display: none;
 }
 
 /*---------------DETAILS SLIDER---------------*/
-#before, #next {
+#previous, #next {
     top: 350px;
     width: 70px;
     height: 70px;
@@ -372,7 +354,7 @@ nav #dropdown {
     transition-duration: 0.3s;
 }
 
-#before {
+#previous {
     left: -35px;
     -webkit-border-radius: 0 70% 70% 0;
     -moz-border-radius: 0 70% 70% 0;
@@ -386,14 +368,14 @@ nav #dropdown {
     border-radius: 70% 0 0 70%;
 }
 
-#before:active, #next:active {
+#previous:active, #next:active {
     background-color: rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.7);
 }
 
-#before, #next, .fa-chevron-left, .fa-chevron-right {
+#previous, #next, .fa-chevron-left, .fa-chevron-right {
     position: absolute;
     z-index: 3;
 }
@@ -1021,6 +1003,10 @@ footer p span {
     background-color: rgba(93, 173, 211, 0.3); /* Black w/ opacity */
 }
 
+#modal-link:hover, #close:hover {
+    cursor: pointer;
+}
+
 /* Modal Content/Box */
 .modal-content {
     background-color: white;
@@ -1097,7 +1083,7 @@ footer p span {
     }
 
     /*---------------DETAILS SLIDER---------------*/
-    #before, #next {
+    #previous, #next {
         top: 458px;
     }
 
@@ -1233,7 +1219,7 @@ footer p span {
     }
 
     /*---------------DETAILS SLIDER---------------*/
-    #before, #next {
+    #previous, #next {
         top: 358px;
     }
 
@@ -1399,7 +1385,7 @@ footer p span {
 /* nouvelle règle pour l'impression */
 @media print {
     /*---------------GENERAL---------------*/
-    #navigation nav, #dropdown, #main-title button, #slider, #timeline, #timeline-background, #before, #next, #list-services img, #projets-menu, #fondBleu, input, textarea {
+    #navigation nav, #dropdown, #main-title button, #slider, #timeline, #timeline-background, #previous, #next, #list-services img, #projets-menu, #fondBleu, input, textarea {
         display: none;
     }
 
