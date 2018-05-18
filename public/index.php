@@ -191,7 +191,7 @@ function proteger($adr)
         </div>
         <!-- Portfolio -->
         <div id="portfolio-content">
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks corporate">
                 <img src="images/portfolio/01.jpg" alt="Dessin sur fond orange représentant des lunettes avec sourcils et un nez.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -201,7 +201,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks creative">
                 <img src="images/portfolio/02.jpg" alt="Dessin sur fond bleu sur lequel se trouve un homme déguisé en lapin rose qui tient une lampe torche dans sa main droite.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -211,7 +211,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks corporate portfolio">
                 <img src="images/portfolio/03.jpg" alt="Dessin sur fond bordeau avec, en blanc, le logo de la marque Original Pompadour, ainsi que son slogan : Slicked back since 1980.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -221,7 +221,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks creative portfolio">
                 <img src="images/portfolio/04.jpg" alt="Dessin sur fond jaune représentant un tas de pages empliées, avec, sur celles su dessus, du texte.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -231,7 +231,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks corporate">
                 <img src="images/portfolio/05.jpg" alt="Dessin sur fond gris sur lequel se trouve deux sacs de shopping.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -241,7 +241,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks creative">
                 <img src="images/portfolio/06.jpg" alt="Dessin dans les tons rouge-orangé, représentant une ville composée d'architecture de différents pays (pyramide d'Egypte, pont américain, temple d'Asie, immeuble français...). Au centre de l'image se trouve un immeuble et une maison bleus.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -251,7 +251,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks corporate portfolio">
                 <img src="images/portfolio/07.jpg" alt="Dessin sur fond beige représentant un logo géométrique noir, qui ressemble à un smartphone en biais transperçé d'une flèche.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -261,7 +261,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks">
+            <div class="portfolio-items allworks creative portfolio">
                 <img src="images/portfolio/08.jpg" alt="Dessin sur fond gris-beige, représentant un enssemble d'accessoires (sac, boitier à lunettes, règle, tampon...) avec, au centre, une feuille. Le nom de la marque Be Theme est visible sur l'ensemble de ces éléments.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
