@@ -182,10 +182,10 @@ function proteger($adr)
             <!-- DropdownMenu secondaire -->
             <div id="projets-menu">
                 <ul> <!-- (Liens désactivés) -->
-                    <li><a class="active">All Works</a></li>
-                    <li><a>Creative</a></li>
-                    <li><a>Corporate</a></li>
-                    <li><a>Portfolio</a></li>
+                    <li id="allworks"><a class="active">All Works</a></li>
+                    <li id="creative"><a>Creative</a></li>
+                    <li id="corporate"><a>Corporate</a></li>
+                    <li id="portfolio"><a>Portfolio</a></li>
                 </ul>
             </div>
         </div>
@@ -211,7 +211,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks corporate portfolio">
+            <div class="portfolio-items allworks corporate">
                 <img src="images/portfolio/03.jpg" alt="Dessin sur fond bordeau avec, en blanc, le logo de la marque Original Pompadour, ainsi que son slogan : Slicked back since 1980.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -221,7 +221,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks creative portfolio">
+            <div class="portfolio-items allworks creative">
                 <img src="images/portfolio/04.jpg" alt="Dessin sur fond jaune représentant un tas de pages empliées, avec, sur celles su dessus, du texte.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -231,7 +231,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks corporate">
+            <div class="portfolio-items allworks portfolio">
                 <img src="images/portfolio/05.jpg" alt="Dessin sur fond gris sur lequel se trouve deux sacs de shopping.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -251,7 +251,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks corporate portfolio">
+            <div class="portfolio-items allworks corporate">
                 <img src="images/portfolio/07.jpg" alt="Dessin sur fond beige représentant un logo géométrique noir, qui ressemble à un smartphone en biais transperçé d'une flèche.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
@@ -261,7 +261,7 @@ function proteger($adr)
                     </div>
                 </div>
             </div>
-            <div class="portfolio-items allworks creative portfolio">
+            <div class="portfolio-items allworks portfolio">
                 <img src="images/portfolio/08.jpg" alt="Dessin sur fond gris-beige, représentant un enssemble d'accessoires (sac, boitier à lunettes, règle, tampon...) avec, au centre, une feuille. Le nom de la marque Be Theme est visible sur l'ensemble de ces éléments.">
                 <div class="hidden">
                     <span class="i-fa-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
