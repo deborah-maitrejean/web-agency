@@ -13,25 +13,41 @@ var Portfolio = {
     },
     shortPortfolio: function () {
         allWorksLi.addEventListener('click', function () {
-            creative.style.display = 'block';
-            corporate.style.display = 'block';
-            portfolio.style.display = 'block';
+            Portfolio.showElements(creative);
+            Portfolio.showElements(corporate);
+            Portfolio.showElements(portfolio);
         });
         creativeLi.addEventListener('click', function () {
-            creative.style.display = 'block';
-            corporate.style.display = 'none';
-            portfolio.style.display = 'none';
+            Portfolio.showElements(creative);
+            Portfolio.hideElements(corporate);
+            Portfolio.hideElements(portfolio);
         });
         corporateLi.addEventListener('click', function () {
-            corporate.style.display = 'block';
-            creative.style.display = 'none';
-            portfolio.style.display = 'none';
+            Portfolio.showElements(corporate);
+            Portfolio.hideElements(creative);
+            Portfolio.hideElements(portfolio);
         });
         portfolioLi.addEventListener('click', function () {
-            portfolio.style.display = 'block';
-            creative.style.display = 'none';
-            corporate.style.display = 'none';
+            Portfolio.showElements(portfolio);
+            Portfolio.hideElements(creative);
+            Portfolio.hideElements(corporate);
         });
     },
+    showElements: function (param) {
+        [].forEach.call(
+            param,
+            function (el) {
+                el.style.display = 'block';
+            }
+        );
+    },
+    hideElements: function (param) {
+        [].forEach.call(
+            param,
+            function (el) {
+                el.style.display = 'none';
+            }
+        );
+    }
 };
 Portfolio.init();
