@@ -285,7 +285,7 @@ function proteger($adr)
         </div>
 
         <!-- Formulaire-->
-        <form action="#" method="post" enctype="">
+        <form action="" method="" enctype="">
             <fieldset>
                 <legend><b>Contact Info</b></legend>
                 <p><strong>WebAgency SAS</strong><br>
@@ -300,8 +300,8 @@ function proteger($adr)
                     <input type="email" id="email" name="email" class="form-input" value="Email" required maxlength="254" title="Adresse mail">
                 </div>
                 <div class="form-group centrer">
-                    <label for="subjet"></label>
-                    <input type="text" id="subjet" name="subjet" class="form-input" value="Subject" required maxlength="255" title="Objet">
+                    <label for="subject"></label>
+                    <input type="text" id="subject" name="subject" class="form-input" value="Subject" required maxlength="255" title="Objet">
                 </div>
                 <div class="form-group centrer">
                     <label for="message"></label>
@@ -374,6 +374,8 @@ function proteger($adr)
 <script src="js/LegalesMentions.js"></script>
 <script src="js/Slider.js"></script>
 <script src="js/Portfolio.js"></script>
+<script src="js/Form.js"></script>
+
 <noscript>
     <p>Attention :<br>
         Afin de pouvoir utiliser notre site, JavaScript doit être activé.

@@ -627,7 +627,7 @@ li .circles, .fa-services {
     -ms-flex-line-pack: start;
     align-content: flex-start; /* comment les lignes se répartissent */
     -webkit-align-items: flex-start;
-    -ms-flex-align: flex-start;
+    -ms-flex-align: start;
     align-items: flex-start; /* alignement axe secondaire */
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -948,6 +948,7 @@ footer {
 }
 
 footer ul {
+    padding: 0;
     list-style-type: none;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1124,6 +1125,11 @@ footer p span {
         -ms-flex-item-align: center;
         align-self: center;
     }
+
+    /*---------------SECTION CONTACT---------------*/
+    #nous-contacter form {
+        margin-top: 15px;
+    }
 }
 
 /* nouvelle règle pour les écrans ne dépassant pas 900px de large */
@@ -1205,7 +1211,7 @@ footer p span {
         background-color: #f9f9f9;
     }
 
-    nav #dropdown { /*#dropdown:hover #dropdown-content, #dropdown-content a*/
+    nav #dropdown {
         display: block;
     }
 
@@ -1261,10 +1267,6 @@ footer p span {
     /*---------------SECTION CONTACT---------------*/
     #nous-contacter {
         padding-top: 0;
-    }
-
-    #nous-contacter form {
-        margin-top: 15px;
     }
 }
 
@@ -1360,6 +1362,8 @@ footer p span {
     fieldset {
         border: 1px solid rgba(0, 0, 0, 0.2);
         width: 100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
         text-align: center;
     }
 
