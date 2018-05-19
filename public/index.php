@@ -374,6 +374,8 @@ function proteger($adr)
 <script src="js/LegalesMentions.js"></script>
 <script src="js/Slider.js"></script>
 <script src="js/Portfolio.js"></script>
+<script src="js/Form.js"></script>
+
 <noscript>
     <p>Attention :<br>
         Afin de pouvoir utiliser notre site, JavaScript doit être activé.
