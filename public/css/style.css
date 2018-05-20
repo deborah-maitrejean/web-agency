@@ -52,6 +52,9 @@ a {
 }
 
 /*---------------EN-TÊTE---------------*/
+header {
+    margin-bottom: 15px;
+}
 #navigation {
     position: fixed;
     z-index: 5;
@@ -120,14 +123,18 @@ nav li {
     padding-left: 15px;
 }
 
+.active-link {
+    font-weight: bold;
+    border-top: 4px solid rgb(93, 173, 211);
+}
+
 nav a {
     color: grey;
     padding: 30px 10px 0 10px;
 }
 
-nav a:hover, nav a:focus, nav a:active {
+nav a:hover, nav a:focus  {
     font-weight: bold;
-    border-top: 4px solid rgb(93, 173, 211);
 }
 
 /*Dropdown menu*/
@@ -475,10 +482,7 @@ h1 {
 }
 
 #services-description {
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 10px 30% 50px;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
@@ -605,10 +609,7 @@ li .circles, .fa-services {
 }
 
 #projets-description {
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 10px 30% 50px;
 }
 
 #projets-description p {
@@ -1067,7 +1068,6 @@ footer p span {
     nav li {
         display: block;
         margin: 0 auto;
-        padding-bottom: 15px;
         text-align: center;
         margin: 0 auto;
         padding-left: 15px;
