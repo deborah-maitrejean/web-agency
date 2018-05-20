@@ -182,7 +182,7 @@ function proteger($adr)
             <!-- DropdownMenu secondaire -->
             <div id="projets-menu">
                 <ul> <!-- (Liens désactivés) -->
-                    <li id="allworks"><a class="active-projects-links active">All Works</a></li>
+                    <li id="allworks"><a class="active-projects-links active-arrows">All Works</a></li>
                     <li id="creative"><a>Creative</a></li>
                     <li id="corporate"><a>Corporate</a></li>
                     <li id="portfolio"><a>Portfolio</a></li>
