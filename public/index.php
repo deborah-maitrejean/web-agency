@@ -8,7 +8,7 @@ function proteger($adr)
 }
 ?>
 
-<!DOCTYPE html> <!-- Déclaration du Doctype : standard qui est utilisé -->
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"> <!-- viewport de la même largeur que l'écran/Possiblité de zoomer X2 -->
