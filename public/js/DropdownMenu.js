@@ -1,8 +1,9 @@
+var dropdownContent = document.querySelector('#dropdown-content');
+var btnOpen = document.getElementById('dropbtn');
+var btnClose = document.getElementById('dropbtn-close');
+
 var DropdownMenu = {
     init: function () {
-        var dropdownContent = document.querySelector('#dropdown-content');
-        var btnOpen = document.getElementById('dropbtn');
-        var btnClose = document.getElementById('dropbtn-close');
         btnClose.style.display = 'none';
 
         btnOpen.addEventListener('click', function () {
