@@ -67,7 +67,7 @@ function proteger($adr)
     <header id="top">
         <div id="navigation">
             <div id="logo">
-                <a href="#" class="scroll"><img src="images/logo.png" alt="Logo de la Webagency"></a>
+                <a href="#top" class="scroll"><img src="images/logo.png" alt="Logo de la Webagency"></a>
             </div>
             <!--DropdownMenu principal -->
             <nav>
