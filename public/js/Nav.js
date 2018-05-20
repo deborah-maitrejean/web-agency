@@ -1,14 +1,3 @@
-/*---------- Navigation fluide ----------*/
-$(document).ready(function () {
-    $('a.scroll').on('click', function (evt) {
-        evt.preventDefault();
-        var target = $(this).attr('href');
-        $('html, body')
-            .stop()
-            .animate({scrollTop: $(target).offset().top - 97}, 1000);
-    });
-});
-
 /*---------- Active menu's links ----------*/
 var navA = document.querySelectorAll('nav li a');
 var homeLink = document.querySelector('nav li:nth-child(1) a');
