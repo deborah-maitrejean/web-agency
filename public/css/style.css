@@ -688,7 +688,26 @@ li .circles, .fa-services {
     -webkit-border-radius: 0 5px 5px 0;
 }
 
-#projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after {
+#projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after { /*flèche*/
+    /*content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #4586a6;
+    position: absolute;
+    bottom: -25%;
+    right: 39%;*/
+}
+
+#projets-menu li:hover, #projets-menu li:focus, #projets-menu li:active, #projets-menu ul:not(:hover) li .active { /*active*/
+    /*background-color: rgb(93, 173, 211);
+    /border-bottom: 2px solid #4586a6;*/
+}
+
+.active-projects-links {
+    background-color: rgb(93, 173, 211);
+    border-bottom: 2px solid #4586a6;
+}
+.active-arrows {
     content: '';
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -696,11 +715,6 @@ li .circles, .fa-services {
     position: absolute;
     bottom: -25%;
     right: 39%;
-}
-
-#projets-menu li:hover, #projets-menu li:focus, #projets-menu li:active, #projets-menu ul:not(:hover) li .active {
-    background-color: rgb(93, 173, 211);
-    border-bottom: 2px solid #4586a6;
 }
 
 #projets-menu a {
