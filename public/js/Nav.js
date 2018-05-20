@@ -15,12 +15,6 @@ var maxHeight = document.documentElement.scrollHeight - document.documentElement
 var Nav = {
     init: function () {
         this.scrollEvents();
-        this.clickEvents();
-    },
-    clickEvents: function (el) {
-        el.addEventListener('click', function () {
-            Nav.activeLinks(el);
-        });
     },
     scrollEvents: function () {
         window.addEventListener('load', function () {
