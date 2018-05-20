@@ -5,7 +5,7 @@ article, aside, details, figure, figcaption, footer, header, menu, nav, section 
 
 /*pour anciens navigateurs ne prenant pas mes balises HTML5 en charge, je déclare ces balises en tant que block*/
 html, body { /*propriétés pour du full screen*/
-    //height: 100%;
+    height: 100%;
     margin: 0;
 }
 
@@ -52,6 +52,9 @@ a {
 }
 
 /*---------------EN-TÊTE---------------*/
+header {
+    margin-bottom: 10px;
+}
 #navigation {
     position: fixed;
     z-index: 5;
@@ -1065,7 +1068,6 @@ footer p span {
     nav li {
         display: block;
         margin: 0 auto;
-        padding-bottom: 15px;
         text-align: center;
         margin: 0 auto;
         padding-left: 15px;
