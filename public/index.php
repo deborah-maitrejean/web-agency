@@ -370,7 +370,7 @@ function proteger($adr)
 </div><!-- Container end -->
 
 <script src="js/fluidNav.js"></script>
-<!--<script src="js/Nav.js"></script>-->
+<script src="js/Nav.js"></script>
 <script src="js/DropdownMenu.js"></script>
 <script src="js/LegalesMentions.js"></script>
 <script src="js/Slider.js"></script>
