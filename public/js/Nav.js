@@ -8,9 +8,9 @@ var contactLink = document.querySelector('nav li:nth-child(4) a');
 var navHeight = document.getElementById('navigation').offsetHeight;
 var topHeight = document.getElementById('top').offsetHeight - navHeight;
 var serviceHeight = document.getElementById('nos-services').offsetHeight + topHeight ;
-var projectHeight = document.getElementById('nos-projets').offsetHeight + serviceHeight;
-var contactUsHeight = document.getElementById('nous-contacter').offsetHeight + projectHeight ;
-var maxHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight ;
+var projectHeight = document.getElementById('nos-projets').offsetHeight + serviceHeight - topHeight;
+var contactUsHeight = document.getElementById('nous-contacter').offsetHeight + projectHeight;
+var maxHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 var Nav = {
     init: function () {
@@ -19,7 +19,7 @@ var Nav = {
     scrollEvents: function () {
         window.addEventListener('load', function () {
             window.addEventListener('scroll', function () {
-                var z = document.documentElement.scrollTop || document.body.scrollTop; // document.body Safari
+                var z = document.documentElement.scrollTop || document.body.scrollTop; // document.body for Safari
 
                 if (z <= topHeight) {
                     homeLink.classList.add('active-link');
@@ -30,7 +30,7 @@ var Nav = {
                 } else if (z <= projectHeight) {
                     projectLink.classList.add('active-link');
                     Nav.activeLinks(projectLink);
-                } else if (z > projectHeight && z <= maxHeight) {
+                } else if (z > projectHeight && z <= contactUsHeight && z <= maxHeight) {
                     contactLink.classList.add('active-link');
                     Nav.activeLinks(contactLink);
                 }
