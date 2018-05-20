@@ -55,6 +55,7 @@ a {
 header {
     margin-bottom: 15px;
 }
+
 #navigation {
     position: fixed;
     z-index: 5;
@@ -133,7 +134,7 @@ nav a {
     padding: 30px 10px 0 10px;
 }
 
-nav a:hover, nav a:focus  {
+nav a:hover, nav a:focus {
     font-weight: bold;
 }
 
@@ -676,38 +677,25 @@ li .circles, .fa-services {
     align-self: auto;
 }
 
-#projets-menu li:first-child, .active {
+#projets-menu li:first-child, #projets-menu li:first-child .active-arrows {
     border-radius: 5px 0 0 5px;
     -moz-border-radius: 5px 0 0 5px;
     -webkit-border-radius: 5px 0 0 5px;
 }
 
-#projets-menu li:last-child {
+#projets-menu li:last-child, #projets-menu li:last-child .active-arrows {
     border-radius: 0 5px 5px 0;
     -moz-border-radius: 0 5px 5px 0;
     -webkit-border-radius: 0 5px 5px 0;
 }
 
-#projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after { /*flèche*/
-    /*content: '';
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #4586a6;
-    position: absolute;
-    bottom: -25%;
-    right: 39%;*/
-}
-
-#projets-menu li:hover, #projets-menu li:focus, #projets-menu li:active, #projets-menu ul:not(:hover) li .active { /*active*/
-    /*background-color: rgb(93, 173, 211);
-    /border-bottom: 2px solid #4586a6;*/
-}
-
 .active-projects-links {
     background-color: rgb(93, 173, 211);
     border-bottom: 2px solid #4586a6;
+    color: white;
 }
-.active-arrows {
+
+.active-arrows::after {
     content: '';
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -719,10 +707,6 @@ li .circles, .fa-services {
 
 #projets-menu a {
     display: block;
-}
-
-#projets-menu li:hover, #projets-menu li:focus, #projets-menu li:active, #projets-menu ul:not(:hover) li .active, #projets-menu a:hover, #projets-menu a:focus, #projets-menu a:active, #projets-menu a:visited:hover {
-    color: white;
 }
 
 #projets-menu a:link, #projets-menu a:visited {
@@ -999,7 +983,7 @@ footer p span {
 }
 
 /*---------- LEGALES MENTIONS MODAL -----------*/
-.modal{
+.modal {
     display: none; /* Hidden by default */
 }
 
@@ -1075,7 +1059,7 @@ footer p span {
     }
 
     #navigation nav {
-        padding-top: 20px;
+        padding-top: 25px;
         width: 100%;
     }
 
@@ -1316,10 +1300,14 @@ footer p span {
         margin-top: 0;
     }
 
-    .fa-items {left: 65%;}
+    .fa-items {
+        left: 65%;
+    }
 
     /*---------------SECTION NOS PROJETS---------------*/
-    #projets-menu {margin: 110px auto 110px auto;}
+    #projets-menu {
+        margin: 110px auto 110px auto;
+    }
 
     #projets-menu ul {
         -webkit-flex-direction: column;
@@ -1332,19 +1320,29 @@ footer p span {
         width: 100%;
     }
 
-    #projets-menu li {line-height: 65px;}
+    #projets-menu li {
+        line-height: 65px;
+    }
 
-    #projets-menu li a {font-size: 28px;}
+    #projets-menu li a {
+        font-size: 28px;
+    }
 
-    #projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after {display: none;}
+    #projets-menu li:hover::after, #projets-menu ul:not(:hover) li .active::after {
+        display: none;
+    }
 
-    #projets-menu li:first-child, .active {
+    .active-arrows::after {
+        display: none;
+    }
+
+    #projets-menu li:first-child, #projets-menu li:first-child .active-projects-links {
         border-radius: 5px 5px 0 0;
         -moz-border-radius: 5px 5px 0 0;
         -webkit-border-radius: 5px 5px 0 0;
     }
 
-    #projets-menu li:last-child {
+    #projets-menu li:last-child, #projets-menu li:last-child .active-projects-links {
         border-radius: 0 5px 5px 0;
         -moz-border-radius: 0 5px 5px 0;
         -webkit-border-radius: 0 0 5px 5px;
