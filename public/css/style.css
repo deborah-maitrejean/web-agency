@@ -19,10 +19,6 @@ html, body { /*propriétés pour du full screen*/
     font-family: 'Roboto', Arial, serif, verdana;
 }
 
-.fa {
-    font-family: 'FontAwesome';
-}
-
 h2 {
     font-size: 30px;
 }
