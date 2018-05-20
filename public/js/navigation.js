@@ -21,23 +21,12 @@ var topHeight = document.getElementById('top').offsetHeight - navHeight;
 var serviceHeight = document.getElementById('nos-services').offsetHeight + topHeight ;
 var projectHeight = document.getElementById('nos-projets').offsetHeight + serviceHeight;
 var contactUsHeight = document.getElementById('nous-contacter').offsetHeight + projectHeight ;
-var maxDim = document.documentElement.scrollHeight - document.documentElement.clientHeight ;
+var maxHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight ;
 
 var Nav = {
     init: function () {
-        this.getLinks();
         this.scrollEvents();
-    },
-    getLinks: function () {
-        this.allLinks(navA);
-    },
-    allLinks: function (param) {
-        [].forEach.call(
-            param,
-            function (el) {
-                Nav.clickEvents(el);
-            }
-        );
+        this.clickEvents();
     },
     clickEvents: function (el) {
         el.addEventListener('click', function () {
@@ -58,7 +47,7 @@ var Nav = {
                 } else if (z <= projectHeight) {
                     projectLink.classList.add('active-link');
                     Nav.activeLinks(projectLink);
-                } else if (z > projectHeight && z <= maxDim) {
+                } else if (z > projectHeight && z <= maxHeight) {
                     contactLink.classList.add('active-link');
                     Nav.activeLinks(contactLink);
                 }
